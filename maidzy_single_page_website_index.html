@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MAIDZY | Hire Verified Maids in Pune</title>
+  <meta name="description" content="MAIDZY – Pune's hassle-free maid service. Book verified maids for cleaning, cooking, babysitting and more. Chat on WhatsApp to book in 2 minutes." />
+  <meta name="keywords" content="maid service pune, cooking maid pune, cleaning service pune, babysitter pune, kaamwali bai pune" />
+  <meta name="theme-color" content="#0d9488" />
+  <style>
+    :root {
+      --brand: #0d9488; /* teal-600 */
+      --brand-dark: #0b7d73;
+      --text: #1f2937; /* gray-800 */
+      --muted: #6b7280; /* gray-500 */
+      --bg: #f9fafb; /* gray-50 */
+      --card: #ffffff;
+      --shadow: 0 8px 24px rgba(2, 6, 23, 0.06);
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; color: var(--text); background: var(--bg); }
+    a { color: var(--brand); text-decoration: none; }
+
+    /* Header */
+    header.topbar {
+      position: sticky; top: 0; z-index: 50;
+      background: var(--card); border-bottom: 1px solid #e5e7eb;
+      box-shadow: 0 2px 10px rgba(2, 6, 23, 0.04);
+    }
+    .container { max-width: 1080px; margin: 0 auto; padding: 0 16px; }
+    .row { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+    .brand { display: flex; align-items: center; gap: 10px; padding: 14px 0; }
+    .brand-logo {
+      width: 36px; height: 36px; border-radius: 10px; background: var(--brand);
+      display: grid; place-items: center; color: white; font-weight: 800; letter-spacing: 0.5px;
+      box-shadow: var(--shadow);
+    }
+    .brand-name { font-weight: 800; font-size: 20px; letter-spacing: 0.5px; }
+    nav a { font-weight: 600; margin-left: 14px; color: var(--text); }
+    nav a:hover { color: var(--brand); }
+
+    /* Hero */
+    .hero { background: linear-gradient(180deg, #ecfeff 0%, #f0fdfa 100%); }
+    .hero-inner { padding: 56px 0; text-align: center; }
+    .hero h1 { font-size: 34px; line-height: 1.15; margin: 0 0 10px; }
+    .hero p { font-size: 18px; color: var(--muted); margin: 0 0 18px; }
+    .cta { display: inline-flex; align-items: center; gap: 8px; background: var(--brand); color: white; padding: 12px 18px; border-radius: 12px; font-weight: 700; box-shadow: var(--shadow); }
+    .cta:hover { background: var(--brand-dark); }
+
+    section { padding: 48px 0; }
+    h2.sec-title { font-size: 26px; margin: 0 0 18px; text-align: center; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 18px; }
+    .card { background: var(--card); border: 1px solid #e5e7eb; border-radius: 16px; padding: 18px; box-shadow: var(--shadow); }
+    .card h3 { margin: 8px 0 6px; }
+    .center { text-align: center; }
+
+    /* Pricing */
+    .price { font-size: 22px; font-weight: 800; color: var(--brand); }
+
+    /* Why */
+    .tick { font-size: 22px; margin-right: 8px; }
+
+    /* Contact */
+    .contact-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; justify-items: center; }
+
+    /* Footer */
+    footer { background: #0f172a; color: #e2e8f0; padding: 24px 0; text-align: center; margin-top: 24px; }
+
+    /* Floating WhatsApp */
+    .whatsapp-float {
+      position: fixed; width: 60px; height: 60px; bottom: 20px; right: 20px;
+      background-color: #25D366; color: white; border-radius: 50%; text-align: center;
+      font-size: 30px; box-shadow: 2px 2px 5px rgba(0,0,0,0.3); z-index: 100; display: flex; justify-content: center; align-items: center;
+    }
+    .whatsapp-float:hover { background-color: #1ebe5d; }
+
+    /* Responsive tweaks */
+    @media (max-width: 480px) {
+      .hero h1 { font-size: 28px; }
+      nav { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Topbar -->
+  <header class="topbar">
+    <div class="container">
+      <div class="row">
+        <div class="brand">
+          <div class="brand-logo" aria-hidden="true">MZ</div>
+          <div class="brand-name">MAIDZY</div>
+        </div>
+        <nav>
+          <a href="#services">Services</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#why">Why Us</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <h1>Hire Verified Maids in Pune — Hassle‑Free</h1>
+      <p>Daily Cleaning, Cooking, Babysitting & more. Book on WhatsApp in 2 minutes.</p>
+      <a id="ctaHero" class="cta" href="#">📲 Book on WhatsApp</a>
+      <div style="margin-top:10px; font-size:12px; color:var(--muted)">Trusted · Verified · Affordable</div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services">
+    <div class="container">
+      <h2 class="sec-title">Our Services</h2>
+      <div class="grid">
+        <div class="card center">🧹<h3>Home Cleaning</h3><p>Dusting, mopping, kitchen & bathroom cleaning.</p></div>
+        <div class="card center">🍳<h3>Cooking Help</h3><p>Daily meals, prep, chopping & utensil cleaning.</p></div>
+        <div class="card center">👶<h3>Babysitting</h3><p>Caring babysitters for infants & kids.</p></div>
+        <div class="card center">👵<h3>Elderly Care</h3><p>Compassionate support for senior citizens.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing">
+    <div class="container">
+      <h2 class="sec-title">Affordable & Transparent Pricing</h2>
+      <div class="grid">
+        <div class="card center"><h3>Hourly Service</h3><div class="price">₹299 / visit</div></div>
+        <div class="card center"><h3>Daily Service</h3><div class="price">₹3,500 / month</div></div>
+        <div class="card center"><h3>Cooking Help</h3><div class="price">From ₹4,000 / month</div></div>
+        <div class="card center"><h3>Full‑Time Maid</h3><div class="price">From ₹8,000 / month</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Us -->
+  <section id="why">
+    <div class="container">
+      <h2 class="sec-title">Why Pune Families Trust MAIDZY</h2>
+      <div class="grid">
+        <div class="card"><span class="tick">✅</span> Verified & police‑checked maids</div>
+        <div class="card"><span class="tick">✅</span> Transparent pricing — no middlemen</div>
+        <div class="card"><span class="tick">✅</span> Free replacement guarantee</div>
+        <div class="card"><span class="tick">✅</span> 24/7 WhatsApp support</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container center">
+      <h2 class="sec-title">Contact Us</h2>
+      <ul class="contact-list">
+        <li>📍 Pune, Maharashtra</li>
+        <li>📧 hello@maidzy.in</li>
+        <li>📞 +91-XXXXXXXXXX</li>
+      </ul>
+      <p style="margin:14px 0 0">Prefer chat? Book instantly on WhatsApp.</p>
+      <p><a id="ctaContact" class="cta" href="#">💬 Chat on WhatsApp</a></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      © <span id="year"></span> MAIDZY · All Rights Reserved
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a id="ctaFloat" class="whatsapp-float" href="#" aria-label="Chat on WhatsApp" target="_blank">💬</a>
+
+  <script>
+    // ===== EDIT ONLY THESE TWO LINES WHEN YOUR NUMBER/DEFAULT MESSAGE CHANGES =====
+    const WA_NUMBER = "91XXXXXXXXXX"; // include country code (e.g., 91 for India)
+    const WA_TEXT = encodeURIComponent("Hi, I want to book a maid in Pune via MAIDZY");
+    // ============================================================================
+
+    const waLink = `https://wa.me/${WA_NUMBER}?text=${WA_TEXT}`;
+    document.getElementById('ctaHero').href = waLink;
+    document.getElementById('ctaContact').href = waLink;
+    document.getElementById('ctaFloat').href = waLink;
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
